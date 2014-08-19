@@ -4,6 +4,7 @@
 {% if (object.locale is defined) %}
     <div class="locale_switcher">
         {% spaceless %}
+        {#
             {% for locale in locales %}
                 {% if (locale_switcher_route is not defined) %}
                     {% if (object.id) %}
@@ -18,6 +19,7 @@
                     <img src="{{ asset('bundles/prestasonataadminextended/img/flags/' ~ locale ~ '.png')}}" />
                 </a>
             {% endfor %}
+            #}
         {% endspaceless %}
     </div>
 {% endif %}
